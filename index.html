@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>個人網站</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Zona</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">自我介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">專案經歷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#active">活動紀錄</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">作品集</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 自我介紹 -->
+    <div id="about" class="container mt-3 box">
+        <div class="box">
+            <img src="./image/半身照.png" class="rounded-circle photo" alt="Cinque Terre">
+            <h2>張亞璇</h2>
+            <h5>1999.01.23 &nbsp; 水瓶座</h5>
+            <p>熱愛心理、影像與文字的資訊人，以前端工程師為目標。</br>
+                大學實習期間曾協助公益基金會規劃網站架構及美編，在學習吧線上學習平台負責教材編輯與動畫製作，也協同前端人員以JSP語言結合MySQL開發購物網站後端製作專題。</br>
+                堅信「沒有我做不到，只有我想不想做」!</p>
+            <div class="list d-flex justify-content-center mb-3">
+                <div class="p-2 tag">自主學習</div>
+                <div class="p-2 tag">溝通表達</div>
+                <div class="p-2 tag">獨立作業</div>
+                <div class="p-2 tag">時間管理</div>
+            </div>
+        </div>
+    </div>
+    <!-- 技能 -->
+    <div id="skill" class=" skill">
+        <h1>專案經歷</h1>
+        <div class="col-wrap row align-items-center">
+
+            <div class="col-sm-4">
+                <img src="./image/網站LOGO.png" alt="">
+            </div>
+            <div class="col-sm-8 ">
+                <p>應用Tomcat架設JSP語言之購物網站後端系統，使用MySQL串接資料庫。</br>
+                    <a href="https://youtu.be/wNUoTS2gbhQ">查看更多</a>
+                </p>
+
+            </div>
+        </div>
+        <div class="col-wrap row align-items-center">
+            <div class="col-sm-4">
+                <img src="./image/個人網站.png" alt="">
+            </div>
+            <div class="col-sm-8">
+                <p>應用Bootstrap、HTML、CSS建置靜態網頁。</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Carousel -->
+
+    <div id="demo" class="carousel slide frame" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <h1 id="active">參與活動</h1>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./image/工作坊.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                <div class="carousel-caption bot">
+                    <h3>104前端工作坊</h3>
+                    <p>參與104舉辦之前端工作坊，學習VUE框架基礎</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/TWELF.jpg" alt="Chicago" class="d-block" style="width:100%">
+                <div class="carousel-caption bot">
+                    <h3>TWELF2023</h3>
+                    <p>受邀至2023台灣數位學習發展研討會發表</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/育碁.png" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption bot">
+                    <h3>育碁學習團</h3>
+                    <p>參與育碁與臺師大合作之學習團活動，學習eHRD系統使用</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/決賽照片.jpg" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption bot">
+                    <h3>雲林科技大學創新創業競賽決賽</h3>
+                    <p>參與創新創業競賽並獲得金獎與人氣獎</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- 作品 -->
+    <div id="work" class="work">
+        <h1>作品集</h1>
+        <div class="d-flex justify-content-center mb-3 work flex-wrap container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="item ">
+                        <a href="https://cycuedutw-my.sharepoint.com/:p:/g/personal/s10614256_cycu_edu_tw/Eaz0X2kWmrZBuBPf-J1r2goB7lXA1bqSQBanHMx3C6z0Zw?e=BHOadr"
+                            target="_blank">
+                            <div class="cover">
+                                <h5>查看</h5>
+                            </div>
+                            <img src="./image/power bi.png" alt="">
+                            <h4>POWER &nbsp; BI</br>實作</h4>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://youtu.be/RpUwqJHf2og" target="_blank">
+                            <div class="cover">
+                                <h5>查看</h5>
+                            </div><img src="./image/radar of secret.png" alt="">
+                            <h4>MG動畫</br>宣傳短片</h4>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://youtu.be/3lMHTelbXPc" target="_blank">
+                            <div class="cover">
+                                <h5>查看</h5>
+                            </div><img src="./image/喜傑獅.png" alt="">
+                            <h4>喜傑獅</br>創意行銷宣傳短片</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="item">
+                        <a href="https://youtu.be/5rtKcRbfRRA" target="_blank">
+                            <div class="cover">
+                                <h5>查看</h5>
+                            </div><img src="./image/亮詮.png" alt="">
+                            <h4>亮詮公益慈善基金會</br>紀錄片預告</h4>
+                    </div>
+                    </a>
+                    <div class="item">
+                        <a href="https://youtu.be/a8sQOD5gzOs" target="_blank">
+                            <div class="cover">
+                                <h5>查看</h5>
+                            </div><img src="./image/亮詮2.png" alt="">
+                            <h4>活動</br>短片剪輯</h4>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://youtu.be/h-3wbzrM0Ko" target="_blank">
+                            <div class="cover">
+                                <h5>查看</h5>
+                            </div><img src="./image/成語教材封面.png" alt="">
+                            <h4>學習吧</br>成語故事教材</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
